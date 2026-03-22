@@ -1,0 +1,18 @@
+name: "Account Discovery - Domain Account Enumeration"
+description: "Detects enumeration of domain accounts and groups"
+severity: medium
+risk_score: 60
+index: winlogbeat-*
+query: |
+  (event.code: 4798 OR event.code: 4799) OR
+  (event.code: 1 AND 
+   winlog.event_data.CommandLine: (*net*user*/domain* OR *net*group*/domain* OR *Get-ADUser* OR *Get-ADGroupMember*))
+threshold:
+  field: winlog.event_data.SubjectUserName
+  value: 10
+interval: 5m
+lookback: 5m
+tags:
+  - MITRE ATT&CK T1087.002
+  - Discovery
+  - Reconnaissance

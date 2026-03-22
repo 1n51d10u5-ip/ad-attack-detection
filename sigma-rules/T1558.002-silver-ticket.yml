@@ -1,0 +1,16 @@
+name: "Silver Ticket - Forged Service Ticket Without TGT"
+description: "Detects Silver Ticket via service ticket without TGT correlation"
+severity: high
+risk_score: 78
+index: winlogbeat-*
+query: |
+  event.code: 4769
+  # Requires correlation logic: service ticket without TGT in prior 1 hour
+threshold: null
+interval: 15m
+lookback: 60m  # Extended lookback for TGT correlation
+tags:
+  - MITRE ATT&CK T1558.002
+  - Persistence
+  - Privilege Escalation
+  - Kerberos

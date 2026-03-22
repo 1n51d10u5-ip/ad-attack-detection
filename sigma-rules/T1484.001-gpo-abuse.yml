@@ -1,0 +1,16 @@
+name: "GPO Modification - Unauthorized Group Policy Changes"
+description: "Detects modifications to Group Policy Objects"
+severity: high
+risk_score: 80
+index: winlogbeat-*
+query: |
+  (event.code: 5136 OR event.code: 5137) AND 
+  winlog.event_data.ObjectClass: groupPolicyContainer
+threshold: null
+interval: 5m
+lookback: 5m
+tags:
+  - MITRE ATT&CK T1484.001
+  - Persistence
+  - Privilege Escalation
+  - GPO

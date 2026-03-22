@@ -1,0 +1,21 @@
+name: "Kerberoasting - RC4 Service Ticket Requests"
+description: "Detects potential Kerberoasting via multiple RC4 encrypted service ticket requests"
+severity: high
+risk_score: 73
+index: winlogbeat-*
+query: |
+  event.code: 4769 AND 
+  winlog.event_data.TicketEncryptionType: "0x17" AND 
+  NOT winlog.event_data.ServiceName: *$
+threshold:
+  field: winlog.event_data.TargetUserName
+  value: 3
+  cardinality:
+    - field: winlog.event_data.ServiceName
+      value: 3
+interval: 5m
+lookback: 5m
+tags:
+  - MITRE ATT&CK T1558.003
+  - Credential Access
+  - Kerberos

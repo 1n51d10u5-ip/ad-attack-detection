@@ -1,0 +1,17 @@
+name: "DCSync - Directory Replication from Non-DC Account"
+description: "Detects DCSync attack via directory replication from user account"
+severity: critical
+risk_score: 99
+index: winlogbeat-*
+query: |
+  event.code: 4662 AND 
+  winlog.event_data.Properties: (*1131f6aa* OR *1131f6ad* OR *89e95b76*) AND 
+  NOT winlog.event_data.SubjectUserName: *$
+threshold: null  # Single occurrence triggers alert
+interval: 5m
+lookback: 5m
+tags:
+  - MITRE ATT&CK T1003.006
+  - Credential Access
+  - DCSync
+  - Critical

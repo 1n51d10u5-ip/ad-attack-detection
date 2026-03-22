@@ -1,0 +1,24 @@
+name: "Pass-the-Ticket - Kerberos Ticket Reuse"
+description: "Detects Pass-the-Ticket via suspicious Kerberos authentication patterns"
+severity: high
+risk_score: 72
+index: winlogbeat-*
+query: |
+  (event.code: 4624 AND 
+   winlog.event_data.LogonType: "3" AND 
+   winlog.event_data.AuthenticationPackageName: "Kerberos") OR
+  (event.code: 4648 AND 
+   winlog.event_data.SubjectUserName: * AND 
+   NOT winlog.event_data.SubjectUserName: winlog.event_data.TargetUserName)
+threshold:
+  field: source.ip
+  value: 2
+  cardinality:
+    - field: winlog.event_data.TargetUserName
+      value: 2
+interval: 10m
+lookback: 10m
+tags:
+  - MITRE ATT&CK T1550.003
+  - Lateral Movement
+  - Kerberos

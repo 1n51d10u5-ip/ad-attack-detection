@@ -1,0 +1,18 @@
+name: "LSASS Memory Dump - Credential Theft via Process Access"
+description: "Detects LSASS process memory dumping via Sysmon"
+severity: critical
+risk_score: 90
+index: winlogbeat-*
+query: |
+  event.code: 10 AND 
+  winlog.event_data.TargetImage: *\\lsass.exe AND 
+  (winlog.event_data.GrantedAccess: ("0x1010" OR "0x1410" OR "0x1438" OR "0x143a")) AND
+  NOT winlog.event_data.SourceImage: (*\\svchost.exe OR *\\wininit.exe OR *\\csrss.exe OR *\\services.exe OR *\\vmtoolsd.exe)
+threshold: null
+interval: 1m  # Rapid detection needed
+lookback: 1m
+tags:
+  - MITRE ATT&CK T1003.001
+  - Credential Access
+  - LSASS
+  - Mimikatz

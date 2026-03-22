@@ -1,0 +1,16 @@
+name: "Golden Ticket - Forged Kerberos TGT"
+description: "Detects Golden Ticket via anomalous TGT characteristics"
+severity: critical
+risk_score: 95
+index: winlogbeat-*
+query: |
+  event.code: 4768 AND 
+  winlog.event_data.TicketOptions: "0x40810010"
+threshold: null
+interval: 5m
+lookback: 5m
+tags:
+  - MITRE ATT&CK T1558.001
+  - Persistence
+  - Privilege Escalation
+  - Kerberos

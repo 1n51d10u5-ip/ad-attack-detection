@@ -1,0 +1,19 @@
+name: "BloodHound - Active Directory Reconnaissance"
+description: "Detects BloodHound/SharpHound AD enumeration activity"
+severity: medium
+risk_score: 65
+index: winlogbeat-*
+query: |
+  event.code: 4662 AND 
+  winlog.event_data.AccessMask: "0x100" AND
+  (winlog.event_data.Properties: (*bf967aba* OR *bf967a9c* OR *bf967a86*))
+threshold:
+  field: winlog.event_data.SubjectUserName
+  value: 100
+interval: 5m
+lookback: 5m
+tags:
+  - MITRE ATT&CK T1069.002
+  - Discovery
+  - BloodHound
+  - Reconnaissance

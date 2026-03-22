@@ -1,0 +1,22 @@
+name: "Pass-the-Hash - NTLM Authentication with Zero Key Length"
+description: "Detects Pass-the-Hash lateral movement via NTLM authentication"
+severity: high
+risk_score: 75
+index: winlogbeat-*
+query: |
+  event.code: 4624 AND 
+  winlog.event_data.LogonType: "3" AND 
+  winlog.event_data.AuthenticationPackageName: "NTLM" AND 
+  winlog.event_data.KeyLength: "0"
+threshold:
+  field: winlog.event_data.TargetUserName
+  value: 2
+  cardinality:
+    - field: winlog.computer_name
+      value: 2
+interval: 5m
+lookback: 5m
+tags:
+  - MITRE ATT&CK T1550.002
+  - Lateral Movement
+  - NTLM

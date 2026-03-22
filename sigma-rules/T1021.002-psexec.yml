@@ -1,0 +1,16 @@
+name: "PsExec Lateral Movement - Remote Service Installation"
+description: "Detects PsExec-style lateral movement via service installation"
+severity: high
+risk_score: 76
+index: winlogbeat-*
+query: |
+  event.code: 7045 AND 
+  (winlog.event_data.ServiceName: *PSEXE* OR 
+   winlog.event_data.ImagePath: (*\\Admin$\\* OR *\\C$\\WINDOWS\\* OR *\\ADMIN$\\*))
+threshold: null
+interval: 5m
+lookback: 5m
+tags:
+  - MITRE ATT&CK T1021.002
+  - Lateral Movement
+  - PsExec

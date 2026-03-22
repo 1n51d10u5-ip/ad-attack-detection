@@ -1,0 +1,21 @@
+name: "AS-REP Roasting - Kerberos Pre-Auth Disabled Abuse"
+description: "Detects AS-REP Roasting via multiple TGT requests without pre-authentication"
+severity: high
+risk_score: 70
+index: winlogbeat-*
+query: |
+  event.code: 4768 AND 
+  winlog.event_data.PreAuthType: "0" AND 
+  winlog.event_data.Status: "0x0"
+threshold:
+  field: source.ip
+  value: 3
+  cardinality:
+    - field: winlog.event_data.TargetUserName
+      value: 3
+interval: 10m
+lookback: 10m
+tags:
+  - MITRE ATT&CK T1558.004
+  - Credential Access
+  - Kerberos
