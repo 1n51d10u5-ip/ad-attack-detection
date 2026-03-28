@@ -11,17 +11,37 @@ from common.alert_parser import parse_alert
 from common.logger import setup_logger
 import config
 
-from playbooks.brute_force_response import respond as bruteforce_respond
+from playbooks.kerberoasting_response import respond as kerberoasting_respond
+from playbooks.dcsync_response import respond as dcsync_respond
 from playbooks.lsass_dump_response import respond as lsass_respond
+from playbooks.brute_force_response import respond as bruteforce_respond
+from playbooks.pass_the_hash_response import respond as pth_respond
+from playbooks.pass_the_ticket_response import respond as ptt_respond
+from playbooks.golden_ticket_response import respond as golden_ticket_respond
+from playbooks.psexec_response import respond as psexec_respond
+from playbooks.asrep_roasting_response import respond as asrep_respond
+from playbooks.defense_evasion_response import respond as defense_evasion_respond
+from playbooks.log_clearing_response import respond as log_clearing_respond
 from playbooks.gpo_abuse_response import respond as gpo_respond
 
 logger = setup_logger("orchestrator")
 
 TECHNIQUE_HANDLERS = {
-    "T1110":     bruteforce_respond,
+    "T1558.003": kerberoasting_respond,
+    "T1003.006": dcsync_respond,
     "T1003.001": lsass_respond,
+    "T1110":     bruteforce_respond,
+    "T1550.002": pth_respond,
+    "T1550.003": ptt_respond,
+    "T1558.001": golden_ticket_respond,
+    "T1021.002": psexec_respond,
+    "T1558.004": asrep_respond,
+    "T1562.001": defense_evasion_respond,
+    "T1070.001": log_clearing_respond,
     "T1484.001": gpo_respond,
 }
+
+ISOLATION_TECHNIQUES = {"T1003.001", "T1021.002"}
 
 app = Flask(__name__)
 
@@ -40,7 +60,7 @@ def process_alert(alert, responded_hosts=None):
         return {"status": "skipped", "reason": "no handler"}
 
     # Per-host cooldown for isolation-type responses
-    if responded_hosts is not None and technique_id == "T1003.001":
+    if responded_hosts is not None and technique_id in ISOLATION_TECHNIQUES:
         if host in responded_hosts:
             logger.info(f"Host {host} already responded to, skipping")
             return {"status": "skipped", "reason": "already_responded"}

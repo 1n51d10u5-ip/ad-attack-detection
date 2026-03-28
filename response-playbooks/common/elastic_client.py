@@ -15,7 +15,7 @@ def get_recent_alerts(technique_id=None, minutes=5):
     technique_queries = {
         "T1558.003": {"bool": {"must": [{"term": {"event.code": "4769"}}, {"term": {"winlog.event_data.TicketEncryptionType": "0x17"}}]}},
         "T1003.006": {"bool": {"must": [{"term": {"event.code": "4662"}}, {"wildcard": {"winlog.event_data.Properties": "*1131f6aa*"}}]}},
-        "T1003.001": {"bool": {"must": [{"term": {"event.code": "10"}}, {"wildcard": {"winlog.event_data.TargetImage": "*lsass*"}}]}},
+        "T1003.001": {"bool": {"must": [{"term": {"event.code": "10"}}, {"wildcard": {"winlog.event_data.TargetImage": "*lsass*"}}], "must_not": [{"wildcard": {"winlog.event_data.SourceImage": "*system32*"}}, {"wildcard": {"winlog.event_data.SourceImage": "*System32*"}}, {"wildcard": {"winlog.event_data.SourceImage": "*VBoxService*"}}, {"wildcard": {"winlog.event_data.SourceImage": "*Sysmon*"}}, {"wildcard": {"winlog.event_data.SourceImage": "*MsMpEng*"}}, {"wildcard": {"winlog.event_data.SourceImage": "*Edge*"}}]}},
         "T1110":     {"bool": {"must": [{"term": {"event.code": "4625"}}], "minimum_should_match": 1, "should": []}},
         "T1069":     {"bool": {"must": [{"term": {"event.code": "3"}}, {"term": {"winlog.event_data.DestinationPort": "389"}}]}},
         "T1550.002": {"bool": {"must": [{"term": {"event.code": "4624"}}, {"term": {"winlog.event_data.LogonType": "3"}}, {"term": {"winlog.event_data.AuthenticationPackageName": "NTLM"}}]}},
