@@ -1,0 +1,1025 @@
+2026-04-13 12:02:03 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-04-13 12:04:03 | orchestrator | INFO | Processing alert | technique=T1558.003 | host=DC01.lab.local | user=jsmith@LAB.LOCAL
+2026-04-13 12:04:03 | kerberoasting_response | WARNING | KERBEROASTING DETECTED | user=jsmith@LAB.LOCAL | host=DC01.lab.local
+2026-04-13 12:04:05 | kerberoasting_response | INFO | Disabled account: jsmith@LAB.LOCAL | RC=1
+2026-04-13 12:04:06 | kerberoasting_response | INFO | Reset password for: jsmith@LAB.LOCAL | RC=1
+2026-04-13 12:04:06 | orchestrator | INFO | Response complete | technique=T1558.003 | result={'status': 'success', 'technique': 'T1558.003', 'actions': [{'action': 'disable_account', 'target': 'jsmith@LAB.LOCAL', 'rc': 1}, {'action': 'reset_password', 'target': 'jsmith@LAB.LOCAL', 'rc': 1}]}
+2026-04-13 12:04:06 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=jsmith
+2026-04-13 12:04:06 | pass_the_hash_response | WARNING | PASS-THE-HASH DETECTED | user=jsmith | host=DC01.lab.local | src=192.168.50.250
+2026-04-13 12:04:07 | pass_the_hash_response | INFO | Disabled account: jsmith | RC=0
+2026-04-13 12:04:08 | pass_the_hash_response | INFO | Reset password for: jsmith | RC=0
+2026-04-13 12:04:08 | orchestrator | INFO | Response complete | technique=T1550.002 | result={'status': 'success', 'technique': 'T1550.002', 'actions': [{'action': 'disable_account', 'target': 'jsmith', 'rc': 0}, {'action': 'reset_password', 'target': 'jsmith', 'rc': 0}]}
+2026-04-13 12:04:08 | orchestrator | INFO | Processing alert | technique=T1558.004 | host=DC01.lab.local | user=jsmith
+2026-04-13 12:04:08 | orchestrator | DEBUG | User jsmith already responded to, skipping
+2026-04-13 12:10:08 | orchestrator | INFO | Processing alert | technique=T1558.004 | host=DC01.lab.local | user=jsmith
+2026-04-13 12:10:08 | orchestrator | DEBUG | User jsmith already responded to, skipping
+2026-04-13 12:10:08 | orchestrator | INFO | Processing alert | technique=T1558.004 | host=DC01.lab.local | user=jsmith
+2026-04-13 12:10:08 | orchestrator | DEBUG | User jsmith already responded to, skipping
+2026-04-13 12:12:05 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-04-13 12:13:06 | orchestrator | INFO | Processing alert | technique=T1558.004 | host=DC01.lab.local | user=jsmith
+2026-04-13 12:13:06 | asrep_roasting_response | WARNING | AS-REP ROASTING DETECTED | user=jsmith | host=DC01.lab.local
+2026-04-13 12:13:06 | asrep_roasting_response | INFO | Re-enabled pre-auth for: jsmith | RC=0
+2026-04-13 12:13:08 | asrep_roasting_response | INFO | Reset password for: jsmith | RC=0
+2026-04-13 12:13:08 | orchestrator | INFO | Response complete | technique=T1558.004 | result={'status': 'success', 'technique': 'T1558.004', 'actions': [{'action': 'enable_preauth', 'target': 'jsmith', 'rc': 0}, {'action': 'reset_password', 'target': 'jsmith', 'rc': 0}]}
+2026-04-13 12:13:08 | orchestrator | INFO | Processing alert | technique=T1558.004 | host=DC01.lab.local | user=jsmith
+2026-04-13 12:13:08 | orchestrator | DEBUG | User jsmith already responded to, skipping
+2026-04-13 12:14:08 | orchestrator | INFO | Processing alert | technique=T1003.006 | host=DC01.lab.local | user=DC01$
+2026-04-13 12:14:08 | dcsync_response | WARNING | DCSYNC DETECTED | user=DC01$ | host=DC01.lab.local
+2026-04-13 12:14:08 | dcsync_response | WARNING | ESCALATION REQUIRED: DCSync detected by privileged/excluded account 'DC01$'. Automated disablement skipped — manual SOC investigation required.
+2026-04-13 12:14:08 | dcsync_response | WARNING | MANUAL ACTION REQUIRED: Reset krbtgt password to invalidate all Kerberos tickets
+2026-04-13 12:14:08 | orchestrator | INFO | Response complete | technique=T1003.006 | result={'status': 'success', 'technique': 'T1003.006', 'actions': [{'action': 'escalation_required', 'target': 'DC01$', 'rc': -1}, {'action': 'manual_krbtgt_reset_required', 'target': 'krbtgt', 'rc': -1}]}
+2026-04-13 12:26:41 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-04-13 12:27:41 | orchestrator | INFO | Processing alert | technique=T1558.001 | host=DC01.lab.local | user=Administrator@LAB.LOCAL
+2026-04-13 12:27:41 | golden_ticket_response | WARNING | GOLDEN TICKET DETECTED | user=Administrator@LAB.LOCAL | host=DC01.lab.local
+2026-04-13 12:27:42 | golden_ticket_response | INFO | First krbtgt reset | RC=0
+2026-04-13 12:27:53 | golden_ticket_response | INFO | Second krbtgt reset | RC=0
+2026-04-13 12:27:54 | golden_ticket_response | INFO | Disabled account: Administrator@LAB.LOCAL | RC=1
+2026-04-13 12:27:54 | orchestrator | INFO | Response complete | technique=T1558.001 | result={'status': 'success', 'technique': 'T1558.001', 'actions': [{'action': 'reset_krbtgt_1', 'rc': 0}, {'action': 'reset_krbtgt_2', 'rc': 0}, {'action': 'disable_account', 'target': 'Administrator@LAB.LOCAL', 'rc': 1}]}
+2026-04-13 12:27:54 | orchestrator | INFO | Processing alert | technique=T1558.001 | host=DC01.lab.local | user=Administrator@LAB.LOCAL
+2026-04-13 12:27:54 | golden_ticket_response | WARNING | GOLDEN TICKET DETECTED | user=Administrator@LAB.LOCAL | host=DC01.lab.local
+2026-04-13 12:27:55 | golden_ticket_response | INFO | First krbtgt reset | RC=0
+2026-04-13 12:28:06 | golden_ticket_response | INFO | Second krbtgt reset | RC=0
+2026-04-13 12:28:07 | golden_ticket_response | INFO | Disabled account: Administrator@LAB.LOCAL | RC=1
+2026-04-13 12:28:07 | orchestrator | INFO | Response complete | technique=T1558.001 | result={'status': 'success', 'technique': 'T1558.001', 'actions': [{'action': 'reset_krbtgt_1', 'rc': 0}, {'action': 'reset_krbtgt_2', 'rc': 0}, {'action': 'disable_account', 'target': 'Administrator@LAB.LOCAL', 'rc': 1}]}
+2026-04-13 12:28:07 | orchestrator | INFO | Processing alert | technique=T1558.001 | host=DC01.lab.local | user=Administrator@LAB.LOCAL
+2026-04-13 12:28:07 | golden_ticket_response | WARNING | GOLDEN TICKET DETECTED | user=Administrator@LAB.LOCAL | host=DC01.lab.local
+2026-04-13 12:28:08 | golden_ticket_response | INFO | First krbtgt reset | RC=0
+2026-04-13 12:28:19 | golden_ticket_response | INFO | Second krbtgt reset | RC=0
+2026-04-13 12:28:20 | golden_ticket_response | INFO | Disabled account: Administrator@LAB.LOCAL | RC=1
+2026-04-13 12:28:20 | orchestrator | INFO | Response complete | technique=T1558.001 | result={'status': 'success', 'technique': 'T1558.001', 'actions': [{'action': 'reset_krbtgt_1', 'rc': 0}, {'action': 'reset_krbtgt_2', 'rc': 0}, {'action': 'disable_account', 'target': 'Administrator@LAB.LOCAL', 'rc': 1}]}
+2026-04-13 12:28:20 | orchestrator | INFO | Processing alert | technique=T1021.002 | host=DC01.lab.local | user=
+2026-04-13 12:28:20 | psexec_response | WARNING | PSEXEC LATERAL MOVEMENT DETECTED | host=DC01.lab.local | service=qdJQ | user=
+2026-04-13 12:28:21 | psexec_response | INFO | Removed PSExec service: qdJQ | RC=0
+2026-04-13 12:28:21 | psexec_response | INFO | Isolated host: DC01.lab.local | RC=5
+2026-04-13 12:28:21 | orchestrator | INFO | Response complete | technique=T1021.002 | result={'status': 'success', 'technique': 'T1021.002', 'actions': [{'action': 'remove_service', 'target': 'qdJQ', 'rc': 0}, {'action': 'isolate_host', 'target': 'DC01.lab.local', 'rc': 5}]}
+2026-04-13 12:28:21 | orchestrator | INFO | Processing alert | technique=T1558.001 | host=DC01.lab.local | user=Administrator@LAB.LOCAL
+2026-04-13 12:28:21 | golden_ticket_response | WARNING | GOLDEN TICKET DETECTED | user=Administrator@LAB.LOCAL | host=DC01.lab.local
+2026-04-13 12:28:22 | golden_ticket_response | INFO | First krbtgt reset | RC=0
+2026-04-13 12:28:33 | golden_ticket_response | INFO | Second krbtgt reset | RC=0
+2026-04-13 12:28:34 | golden_ticket_response | INFO | Disabled account: Administrator@LAB.LOCAL | RC=1
+2026-04-13 12:28:34 | orchestrator | INFO | Response complete | technique=T1558.001 | result={'status': 'success', 'technique': 'T1558.001', 'actions': [{'action': 'reset_krbtgt_1', 'rc': 0}, {'action': 'reset_krbtgt_2', 'rc': 0}, {'action': 'disable_account', 'target': 'Administrator@LAB.LOCAL', 'rc': 1}]}
+2026-04-13 12:44:35 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=Administrator
+2026-04-13 12:44:35 | pass_the_hash_response | WARNING | PASS-THE-HASH DETECTED | user=Administrator | host=DC01.lab.local | src=192.168.50.250
+2026-04-13 12:44:36 | pass_the_hash_response | INFO | Disabled account: Administrator | RC=0
+2026-04-13 12:44:43 | pass_the_hash_response | INFO | Reset password for: Administrator | RC=255
+2026-04-13 12:44:43 | orchestrator | INFO | Response complete | technique=T1550.002 | result={'status': 'success', 'technique': 'T1550.002', 'actions': [{'action': 'disable_account', 'target': 'Administrator', 'rc': 0}, {'action': 'reset_password', 'target': 'Administrator', 'rc': 255}]}
+2026-04-13 12:44:43 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=Administrator
+2026-04-13 12:44:43 | orchestrator | DEBUG | User Administrator already responded to, skipping
+2026-04-13 12:44:43 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=Administrator
+2026-04-13 12:44:43 | orchestrator | DEBUG | User Administrator already responded to, skipping
+2026-04-13 12:44:43 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=Administrator
+2026-04-13 12:44:43 | orchestrator | DEBUG | User Administrator already responded to, skipping
+2026-04-13 12:44:43 | orchestrator | INFO | Processing alert | technique=T1021.002 | host=DC01.lab.local | user=
+2026-04-13 12:44:43 | orchestrator | DEBUG | Host DC01.lab.local already responded to, skipping
+2026-04-13 12:45:43 | orchestrator | INFO | Processing alert | technique=T1110 | host=DC01.lab.local | user=DC01$
+2026-04-13 12:45:43 | brute_force_response | WARNING | BRUTE FORCE DETECTED | user=DC01$ | host=DC01.lab.local | src=-
+2026-04-13 12:45:43 | orchestrator | INFO | Response complete | technique=T1110 | result={'status': 'success', 'technique': 'T1110', 'actions': []}
+2026-04-13 12:45:43 | orchestrator | INFO | Processing alert | technique=T1110 | host=DC01.lab.local | user=FakeUser
+2026-04-13 12:45:43 | brute_force_response | WARNING | BRUTE FORCE DETECTED | user=FakeUser | host=DC01.lab.local | src=-
+2026-04-13 12:45:50 | brute_force_response | INFO | Disabled account: FakeUser | RC=255
+2026-04-13 12:45:50 | orchestrator | INFO | Response complete | technique=T1110 | result={'status': 'success', 'technique': 'T1110', 'actions': [{'action': 'disable_account', 'target': 'FakeUser', 'rc': 255}]}
+2026-04-13 12:46:50 | orchestrator | INFO | Processing alert | technique=T1110 | host=DC01.lab.local | user=DC01$
+2026-04-13 12:46:50 | orchestrator | DEBUG | User DC01$ already responded to, skipping
+2026-04-13 12:46:50 | orchestrator | INFO | Processing alert | technique=T1110 | host=DC01.lab.local | user=FakeUser
+2026-04-13 12:46:50 | orchestrator | DEBUG | User FakeUser already responded to, skipping
+2026-04-13 12:48:50 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=Administrator
+2026-04-13 12:48:50 | orchestrator | DEBUG | User Administrator already responded to, skipping
+2026-04-13 12:48:50 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=Administrator
+2026-04-13 12:48:50 | orchestrator | DEBUG | User Administrator already responded to, skipping
+2026-04-13 12:48:50 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=Administrator
+2026-04-13 12:48:50 | orchestrator | DEBUG | User Administrator already responded to, skipping
+2026-04-13 12:48:50 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=Administrator
+2026-04-13 12:48:50 | orchestrator | DEBUG | User Administrator already responded to, skipping
+2026-04-13 12:48:51 | orchestrator | INFO | Processing alert | technique=T1021.002 | host=DC01.lab.local | user=
+2026-04-13 12:48:51 | orchestrator | DEBUG | Host DC01.lab.local already responded to, skipping
+2026-04-13 13:01:48 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-04-13 13:04:00 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-04-13 13:05:00 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=labadmin
+2026-04-13 13:05:00 | pass_the_hash_response | WARNING | PASS-THE-HASH DETECTED | user=labadmin | host=DC01.lab.local | src=192.168.50.250
+2026-04-13 13:05:01 | pass_the_hash_response | INFO | Disabled account: labadmin | RC=0
+2026-04-13 13:05:02 | pass_the_hash_response | INFO | Reset password for: labadmin | RC=0
+2026-04-13 13:05:02 | orchestrator | INFO | Response complete | technique=T1550.002 | result={'status': 'success', 'technique': 'T1550.002', 'actions': [{'action': 'disable_account', 'target': 'labadmin', 'rc': 0}, {'action': 'reset_password', 'target': 'labadmin', 'rc': 0}]}
+2026-04-13 13:05:02 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=labadmin
+2026-04-13 13:05:02 | orchestrator | DEBUG | User labadmin already responded to, skipping
+2026-04-13 13:05:02 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=labadmin
+2026-04-13 13:05:02 | orchestrator | DEBUG | User labadmin already responded to, skipping
+2026-04-13 13:05:02 | orchestrator | INFO | Processing alert | technique=T1550.002 | host=DC01.lab.local | user=labadmin
+2026-04-13 13:05:02 | orchestrator | DEBUG | User labadmin already responded to, skipping
+2026-04-13 13:05:02 | orchestrator | INFO | Processing alert | technique=T1021.002 | host=DC01.lab.local | user=
+2026-04-13 13:05:02 | psexec_response | WARNING | PSEXEC LATERAL MOVEMENT DETECTED | host=DC01.lab.local | service=asMs | user=
+2026-04-13 13:05:03 | psexec_response | INFO | Removed PSExec service: asMs | RC=0
+2026-04-13 13:05:03 | psexec_response | INFO | Isolated host: DC01.lab.local | RC=5
+2026-04-13 13:05:03 | orchestrator | INFO | Response complete | technique=T1021.002 | result={'status': 'success', 'technique': 'T1021.002', 'actions': [{'action': 'remove_service', 'target': 'asMs', 'rc': 0}, {'action': 'isolate_host', 'target': 'DC01.lab.local', 'rc': 5}]}
+2026-04-13 13:06:03 | orchestrator | INFO | Processing alert | technique=T1110 | host=DC01.lab.local | user=administrator@lab.local
+2026-04-13 13:06:03 | brute_force_response | WARNING | BRUTE FORCE DETECTED | user=administrator@lab.local | host=DC01.lab.local | src=-
+2026-04-13 13:06:04 | brute_force_response | INFO | Disabled account: administrator@lab.local | RC=1
+2026-04-13 13:06:04 | orchestrator | INFO | Response complete | technique=T1110 | result={'status': 'success', 'technique': 'T1110', 'actions': [{'action': 'disable_account', 'target': 'administrator@lab.local', 'rc': 1}]}
+2026-04-13 13:10:04 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:04 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo={379BBB96-8530-4DBB-A832-77FB584C2946} | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:05 | gpo_abuse_response | INFO | Removed GPO: {379BBB96-8530-4DBB-A832-77FB584C2946} | RC=1
+2026-04-13 13:10:05 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': '{379BBB96-8530-4DBB-A832-77FB584C2946}', 'rc': 1}]}
+2026-04-13 13:10:05 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:05 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=1.2.840.113556.1.5.157 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:06 | gpo_abuse_response | INFO | Removed GPO: 1.2.840.113556.1.5.157 | RC=1
+2026-04-13 13:10:06 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': '1.2.840.113556.1.5.157', 'rc': 1}]}
+2026-04-13 13:10:06 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:06 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=2 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:06 | gpo_abuse_response | INFO | Removed GPO: 2 | RC=1
+2026-04-13 13:10:06 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': '2', 'rc': 1}]}
+2026-04-13 13:10:06 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:06 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=0 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:07 | gpo_abuse_response | INFO | Removed GPO: 0 | RC=1
+2026-04-13 13:10:07 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': '0', 'rc': 1}]}
+2026-04-13 13:10:07 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:07 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=New Group Policy Object | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:08 | gpo_abuse_response | INFO | Removed GPO: New Group Policy Object | RC=1
+2026-04-13 13:10:08 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': 'New Group Policy Object', 'rc': 1}]}
+2026-04-13 13:10:08 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:08 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=MaliciousGPO7 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:09 | gpo_abuse_response | INFO | Removed GPO: MaliciousGPO7 | RC=0
+2026-04-13 13:10:09 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': 'MaliciousGPO7', 'rc': 0}]}
+2026-04-13 13:10:09 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:09 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=New Group Policy Object | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:09 | gpo_abuse_response | INFO | Removed GPO: New Group Policy Object | RC=1
+2026-04-13 13:10:09 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': 'New Group Policy Object', 'rc': 1}]}
+2026-04-13 13:10:09 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:09 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=\\lab.local\SysVol\lab.local\Policies\{379BBB96-8530-4DBB-A832-77FB584C2946} | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:10 | gpo_abuse_response | INFO | Removed GPO: \\lab.local\SysVol\lab.local\Policies\{379BBB96-8530-4DBB-A832-77FB584C2946} | RC=1
+2026-04-13 13:10:10 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': '\\\\lab.local\\SysVol\\lab.local\\Policies\\{379BBB96-8530-4DBB-A832-77FB584C2946}', 'rc': 1}]}
+2026-04-13 13:10:10 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:10 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=0 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:10:11 | gpo_abuse_response | INFO | Removed GPO: 0 | RC=1
+2026-04-13 13:10:11 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': '0', 'rc': 1}]}
+2026-04-13 13:10:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:10:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:10:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:10:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:10:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:10:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:13:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:13:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:13:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:13:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:13:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:13:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:14:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:14:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:14:11 | orchestrator | INFO | Processing alert | technique=T1003.006 | host=DC01.lab.local | user=DC01$
+2026-04-13 13:14:11 | dcsync_response | WARNING | DCSYNC DETECTED | user=DC01$ | host=DC01.lab.local
+2026-04-13 13:14:11 | dcsync_response | WARNING | ESCALATION REQUIRED: DCSync detected by privileged/excluded account 'DC01$'. Automated disablement skipped — manual SOC investigation required.
+2026-04-13 13:14:11 | dcsync_response | WARNING | MANUAL ACTION REQUIRED: Reset krbtgt password to invalidate all Kerberos tickets
+2026-04-13 13:14:11 | orchestrator | INFO | Response complete | technique=T1003.006 | result={'status': 'success', 'technique': 'T1003.006', 'actions': [{'action': 'escalation_required', 'target': 'DC01$', 'rc': -1}, {'action': 'manual_krbtgt_reset_required', 'target': 'krbtgt', 'rc': -1}]}
+2026-04-13 13:15:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:18:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:18:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:18:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:18:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:18:11 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:23:49 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:23:49 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:23:49 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:23:49 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:23:49 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:23:49 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:23:49 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:23:49 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:23:49 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:23:49 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:23:49 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:23:49 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:24:02 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:24:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:24:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:24:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:24:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:24:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:24:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:24:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:24:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:24:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:24:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:24:03 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:25:03 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:26:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:26:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:26:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:26:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:26:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:26:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:26:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:26:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:26:03 | gpo_abuse_response | WARNING | Could not extract GPO display name from alert — skipping removal
+2026-04-13 13:26:03 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:26:03 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:39:37 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-04-13 13:39:43 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-04-13 13:40:43 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | Could not extract GPO display name — skipping removal
+2026-04-13 13:40:43 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:40:43 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | Could not extract GPO display name — skipping removal
+2026-04-13 13:40:43 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:40:43 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | Could not extract GPO display name — skipping removal
+2026-04-13 13:40:43 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:40:43 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | Could not extract GPO display name — skipping removal
+2026-04-13 13:40:43 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:40:43 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | Could not extract GPO display name — skipping removal
+2026-04-13 13:40:43 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:40:43 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=None | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | Could not extract GPO display name — skipping removal
+2026-04-13 13:40:43 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': []}
+2026-04-13 13:40:43 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:43 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=New Group Policy Object | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:44 | gpo_abuse_response | INFO | Removed GPO: New Group Policy Object | RC=1
+2026-04-13 13:40:45 | gpo_abuse_response | INFO | Forced GP update | RC=0
+2026-04-13 13:40:45 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': 'New Group Policy Object', 'rc': 1}, {'action': 'gp_update', 'rc': 0}]}
+2026-04-13 13:40:45 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:45 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=New Group Policy Object | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:46 | gpo_abuse_response | INFO | Removed GPO: New Group Policy Object | RC=1
+2026-04-13 13:40:47 | gpo_abuse_response | INFO | Forced GP update | RC=0
+2026-04-13 13:40:47 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': 'New Group Policy Object', 'rc': 1}, {'action': 'gp_update', 'rc': 0}]}
+2026-04-13 13:40:47 | orchestrator | INFO | Processing alert | technique=T1484.001 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:47 | gpo_abuse_response | WARNING | GPO ABUSE DETECTED | gpo=MaliciousGPO6 | host=DC01.lab.local | user=Administrator
+2026-04-13 13:40:47 | gpo_abuse_response | INFO | Removed GPO: MaliciousGPO6 | RC=0
+2026-04-13 13:40:48 | gpo_abuse_response | INFO | Forced GP update | RC=0
+2026-04-13 13:40:48 | orchestrator | INFO | Response complete | technique=T1484.001 | result={'status': 'success', 'technique': 'T1484.001', 'actions': [{'action': 'remove_gpo', 'target': 'MaliciousGPO6', 'rc': 0}, {'action': 'gp_update', 'rc': 0}]}
+2026-04-13 13:40:48 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:40:48 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:40:48 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:40:48 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:50:49 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:49 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-04-13 13:50:49 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-04-13 13:50:59 | lsass_dump_response | INFO | Host WS01.lab.local isolated successfully
+2026-04-13 13:50:59 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'success', 'technique': 'T1003.001', 'action': 'host_isolated', 'host': 'WS01.lab.local'}
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:50:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:50:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:52:59 | orchestrator | INFO | Processing alert | technique=T1069 | host=DC01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:57:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:57:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 13:58:59 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 13:58:59 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:00:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:00:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:00:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:00:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:00:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:00:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:01:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:01:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:02:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:02:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:02:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:02:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:02:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:02:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:03:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:03:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:03:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:03:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:03:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:03:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:03:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:03:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:03:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:03:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:04:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:04:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:05:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:05:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:05:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:05:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:05:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:05:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:05:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:05:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:05:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:05:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:05:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:05:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:05:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:05:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:06:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:06:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:07:00 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:07:00 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:00 | orchestrator | INFO | Processing alert | technique=T1110 | host=WS01.lab.local | user=Administrator
+2026-04-13 14:08:00 | brute_force_response | WARNING | BRUTE FORCE DETECTED | user=Administrator | host=WS01.lab.local | src=127.0.0.1
+2026-04-13 14:08:01 | brute_force_response | INFO | Disabled account: Administrator | RC=0
+2026-04-13 14:08:01 | orchestrator | INFO | Response complete | technique=T1110 | result={'status': 'success', 'technique': 'T1110', 'actions': [{'action': 'disable_account', 'target': 'Administrator', 'rc': 0}]}
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:08:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:08:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:09:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:09:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:09:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:09:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:09:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:09:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:10:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:10:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:11:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:11:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:11:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:11:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:11:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:11:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:11:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:11:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:12:01 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:12:01 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:13:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:13:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:13:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:13:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:13:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:13:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:13:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:13:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:14:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:14:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:14:02 | orchestrator | INFO | Processing alert | technique=T1003.006 | host=DC01.lab.local | user=DC01$
+2026-04-13 14:14:02 | dcsync_response | WARNING | DCSYNC DETECTED | user=DC01$ | host=DC01.lab.local
+2026-04-13 14:14:02 | dcsync_response | WARNING | ESCALATION REQUIRED: DCSync detected by privileged/excluded account 'DC01$'. Automated disablement skipped — manual SOC investigation required.
+2026-04-13 14:14:02 | dcsync_response | WARNING | MANUAL ACTION REQUIRED: Reset krbtgt password to invalidate all Kerberos tickets
+2026-04-13 14:14:02 | orchestrator | INFO | Response complete | technique=T1003.006 | result={'status': 'success', 'technique': 'T1003.006', 'actions': [{'action': 'escalation_required', 'target': 'DC01$', 'rc': -1}, {'action': 'manual_krbtgt_reset_required', 'target': 'krbtgt', 'rc': -1}]}
+2026-04-13 14:14:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:14:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:14:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:14:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:15:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:15:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:15:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:15:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:15:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:15:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:15:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:15:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:15:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:15:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:16:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:16:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:16:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:16:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:16:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:16:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:17:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:17:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:17:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:17:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:17:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:17:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:18:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:18:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:18:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:18:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:18:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:18:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:18:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:18:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:19:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:19:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:20:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:20:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:20:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:20:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:20:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:20:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:21:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:21:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:21:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:21:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:21:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:21:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:22:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:22:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:22:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:22:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:22:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:22:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:22:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:22:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:24:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:24:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:25:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:25:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:25:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:25:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:25:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:25:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:26:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:26:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:26:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:26:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:26:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:26:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:26:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:26:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:26:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:26:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:26:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:26:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:26:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:26:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:26:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:26:02 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:27:03 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:27:03 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:27:03 | orchestrator | INFO | Processing alert | technique=T1070.001 | host=WS01.lab.local | user=
+2026-04-13 14:27:03 | log_clearing_response | WARNING | LOG CLEARING DETECTED | host=WS01.lab.local | user=
+2026-04-13 14:27:03 | log_clearing_response | INFO | Exported Security log on: WS01.lab.local | RC=0
+2026-04-13 14:27:04 | log_clearing_response | INFO | Exported System log on: WS01.lab.local | RC=0
+2026-04-13 14:27:05 | log_clearing_response | INFO | Increased log retention on: WS01.lab.local | RC=0
+2026-04-13 14:27:05 | orchestrator | INFO | Response complete | technique=T1070.001 | result={'status': 'success', 'technique': 'T1070.001', 'actions': [{'action': 'export_security_log', 'target': 'WS01.lab.local', 'rc': 0}, {'action': 'export_system_log', 'target': 'WS01.lab.local', 'rc': 0}, {'action': 'increase_log_size', 'target': 'WS01.lab.local', 'rc': 0}]}
+2026-04-13 14:27:05 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:27:05 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:27:05 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:27:05 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:28:05 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:28:05 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:28:05 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:28:05 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:28:05 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:28:05 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:29:05 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:29:05 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:29:05 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:29:05 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping
+2026-04-13 14:29:05 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-04-13 14:29:05 | orchestrator | DEBUG | Host WS01.lab.local already responded to, skipping

@@ -21,12 +21,13 @@ def run_dc_command(command):
 
 def extract_gpo_name(alert):
     raw = alert.get("raw", {})
-    message = raw.get("message", "")
-    for line in message.split("\n"):
-        if "Value:" in line:
-            value = line.split("Value:")[-1].strip()
-            if value and value != "-":
-                return value
+    winlog = raw.get("winlog", {}).get("event_data", {})
+    attr_name = winlog.get("AttributeLDAPDisplayName", "")
+    attr_value = winlog.get("AttributeValue", "")
+
+    # Only extract when the modified attribute is the displayName
+    if attr_name == "displayName" and attr_value and attr_value != "-":
+        return attr_value
     return None
 
 def respond(alert):
@@ -42,7 +43,11 @@ def respond(alert):
         result = run_dc_command(f"Remove-GPO -Name '{gpo_name}' -Confirm:$false")
         actions.append({"action": "remove_gpo", "target": gpo_name, "rc": result.returncode})
         logger.info(f"Removed GPO: {gpo_name} | RC={result.returncode}")
+
+        result2 = run_dc_command("Invoke-GPUpdate -Force")
+        actions.append({"action": "gp_update", "rc": result2.returncode})
+        logger.info(f"Forced GP update | RC={result2.returncode}")
     else:
-        logger.warning("Could not extract GPO name from alert")
+        logger.warning("Could not extract GPO display name — skipping removal")
 
     return {"status": "success", "technique": "T1484.001", "actions": actions}

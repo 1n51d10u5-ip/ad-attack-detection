@@ -26,7 +26,7 @@ def parse_alert(alert):
         "timestamp":    source.get("@timestamp", ""),
         "event_code":   event_code,
         "host":         source.get("host", {}).get("name", ""),
-        "username":     winlog.get("TargetUserName", ""),
+        "username":     winlog.get("TargetUserName", "") or winlog.get("SubjectUserName", ""),
         "source_ip":    winlog.get("IpAddress", ""),
         "technique_id": _detect_technique(event_code, winlog),
         "raw":          source
@@ -49,7 +49,7 @@ def _detect_technique(event_code, winlog):
 
     if event_code == "4769" and enc_type == "0x17":
         return "T1558.003"
-    if event_code == "4662" and "1131f6aa" in properties:
+    if event_code == "4662" and any (g in properties for g in ["1131f6aa", "1131f6ad", "89e95b76"]):
         return "T1003.006"
     if event_code == "10" and "lsass" in target_image.lower():
         return "T1003.001"
@@ -61,7 +61,8 @@ def _detect_technique(event_code, winlog):
         return "T1550.002"
     if event_code == "7045" and "%systemroot%" in image_path.lower():
         return "T1021.002"
-    if event_code in ["7036"] and "stopped" in param2.lower():
+    param1 = winlog.get("param1", "")
+    if event_code == "7036" and "defender" in param1.lower() and "stopped" in param2.lower():
         return "T1562.001"
     if event_code in ["1102", "104"]:
         return "T1070.001"

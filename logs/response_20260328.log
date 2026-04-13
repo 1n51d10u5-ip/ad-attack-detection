@@ -1,0 +1,769 @@
+2026-03-28 10:56:45 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:56:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:56:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:57:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:57:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:58:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:58:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:59:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:59:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:59:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:59:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:59:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:59:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:59:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:59:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 10:59:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 10:59:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:00:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:00:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:00:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:00:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:00:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:00:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:00:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:00:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:01:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:01:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:01:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:01:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:01:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:01:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:01:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:01:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:01:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:01:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:01:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:01:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:01:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:01:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:01:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:01:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:01:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:01:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:02:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:02:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:02:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:02:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:02:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:02:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:02:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:02:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:03:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:03:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:03:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:03:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:03:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:03:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:03:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:03:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:04:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:04:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:04:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:04:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:04:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:04:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:04:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:04:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:04:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:04:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:04:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:04:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:05:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:05:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:06:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:06:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:06:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:06:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:06:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:06:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:06:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:06:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:07:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:07:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:07:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:07:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:07:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:07:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:07:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:07:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:08:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:08:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:08:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:08:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:08:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:08:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:08:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:08:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:08:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:08:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:09:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:09:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:09:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:09:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:09:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:09:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:10:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:10:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:10:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:10:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:10:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:10:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:10:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:10:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:10:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:10:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:10:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:10:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:11:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:11:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:11:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:11:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:11:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:11:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:11:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:11:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:12:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:12:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:12:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:12:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:12:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:12:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:12:45 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:12:45 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:13:46 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:13:46 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:13:46 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:13:46 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:13:46 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:13:46 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:13:46 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:13:46 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: N9wDNZ0BMz4H2gnOiRIY
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: NNwDNZ0BMz4H2gnOTRKh
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: MtwDNZ0BMz4H2gnOEhJB
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: I9wCNZ0BMz4H2gnO2hL7
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: JNwCNZ0BMz4H2gnO2hL7
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: INwCNZ0BMz4H2gnO2hL7
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: IdwCNZ0BMz4H2gnO2hL7
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: E9wCNZ0BMz4H2gnO2hL7
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: EtwCNZ0BMz4H2gnOnxJ3
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: CtwCNZ0BMz4H2gnOZBIH
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: C9wCNZ0BMz4H2gnOZBIH
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: ANwCNZ0BMz4H2gnOZBIH
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:15:26 | orchestrator | INFO | New alert ID: _twCNZ0BMz4H2gnOKBHr
+2026-03-28 11:15:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:15:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:16:26 | orchestrator | INFO | New alert ID: U9wENZ0BMz4H2gnOchLX
+2026-03-28 11:16:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:16:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:16:26 | orchestrator | INFO | New alert ID: UtwENZ0BMz4H2gnONxKM
+2026-03-28 11:16:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:16:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:16:26 | orchestrator | INFO | New alert ID: UdwENZ0BMz4H2gnOABIQ
+2026-03-28 11:16:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:16:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:16:26 | orchestrator | INFO | New alert ID: ONwDNZ0BMz4H2gnOxBKE
+2026-03-28 11:16:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:16:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:17:26 | orchestrator | INFO | New alert ID: WtwFNZ0BMz4H2gnOXRID
+2026-03-28 11:17:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:17:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:17:26 | orchestrator | INFO | New alert ID: WdwFNZ0BMz4H2gnOJRJm
+2026-03-28 11:17:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:17:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:17:26 | orchestrator | INFO | New alert ID: WNwENZ0BMz4H2gnO6RL_
+2026-03-28 11:17:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:17:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:17:26 | orchestrator | INFO | New alert ID: VNwENZ0BMz4H2gnOrhJT
+2026-03-28 11:17:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:17:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:18:26 | orchestrator | INFO | New alert ID: YdwGNZ0BMz4H2gnOShJW
+2026-03-28 11:18:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:18:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:18:26 | orchestrator | INFO | New alert ID: YNwGNZ0BMz4H2gnODxIp
+2026-03-28 11:18:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:18:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:18:26 | orchestrator | INFO | New alert ID: X9wFNZ0BMz4H2gnO0xK2
+2026-03-28 11:18:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:18:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:18:26 | orchestrator | INFO | New alert ID: W9wFNZ0BMz4H2gnOmBJY
+2026-03-28 11:18:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:18:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:19:26 | orchestrator | INFO | New alert ID: aNwHNZ0BMz4H2gnONBIF
+2026-03-28 11:19:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:19:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:19:26 | orchestrator | INFO | New alert ID: Z9wGNZ0BMz4H2gnO-BKW
+2026-03-28 11:19:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:19:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:19:26 | orchestrator | INFO | New alert ID: ZtwGNZ0BMz4H2gnOvRJU
+2026-03-28 11:19:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:19:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:19:26 | orchestrator | INFO | New alert ID: YtwGNZ0BMz4H2gnOgRLZ
+2026-03-28 11:19:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:19:26 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 11:25:26 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: N9wMNZ0BMz4H2gnOsBMd
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: NtwMNZ0BMz4H2gnOcBO6
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: NNwMNZ0BMz4H2gnOcBO6
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: MNwMNZ0BMz4H2gnOcBO6
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: LtwMNZ0BMz4H2gnOLRMy
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: KdwMNZ0BMz4H2gnOAROq
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: JNwLNZ0BMz4H2gnOxhND
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: GNwLNZ0BMz4H2gnOehPj
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: F9wLNZ0BMz4H2gnOehPj
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: FtwLNZ0BMz4H2gnOehPj
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: FdwLNZ0BMz4H2gnOehPj
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: EtwLNZ0BMz4H2gnOehPj
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: E9wLNZ0BMz4H2gnOehPj
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: BtwLNZ0BMz4H2gnOTxMK
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: B9wLNZ0BMz4H2gnOTxMK
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:25:26 | orchestrator | INFO | New alert ID: AtwLNZ0BMz4H2gnOTxMK
+2026-03-28 11:25:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:25:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:25:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:26:26 | orchestrator | INFO | New alert ID: U9wNNZ0BMz4H2gnOmRPv
+2026-03-28 11:26:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:26:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:26:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:26:26 | orchestrator | INFO | New alert ID: UtwNNZ0BMz4H2gnOXhOy
+2026-03-28 11:26:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:26:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:26:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:26:26 | orchestrator | INFO | New alert ID: UdwNNZ0BMz4H2gnOJxNK
+2026-03-28 11:26:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:26:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:26:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:26:26 | orchestrator | INFO | New alert ID: ONwMNZ0BMz4H2gnO6xO1
+2026-03-28 11:26:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:26:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:26:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:27:26 | orchestrator | INFO | New alert ID: WtwONZ0BMz4H2gnOgxP4
+2026-03-28 11:27:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:27:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:27:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:27:26 | orchestrator | INFO | New alert ID: WdwONZ0BMz4H2gnOTBNR
+2026-03-28 11:27:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:27:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:27:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:27:26 | orchestrator | INFO | New alert ID: WNwONZ0BMz4H2gnOEBPz
+2026-03-28 11:27:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:27:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:27:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:27:26 | orchestrator | INFO | New alert ID: VNwNNZ0BMz4H2gnO1ROF
+2026-03-28 11:27:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:27:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:27:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:28:26 | orchestrator | INFO | New alert ID: YdwPNZ0BMz4H2gnObhMs
+2026-03-28 11:28:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:28:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:28:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:28:26 | orchestrator | INFO | New alert ID: YNwPNZ0BMz4H2gnONhN2
+2026-03-28 11:28:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:28:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:28:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:28:26 | orchestrator | INFO | New alert ID: X9wONZ0BMz4H2gnO-xMJ
+2026-03-28 11:28:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:28:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:28:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:28:26 | orchestrator | INFO | New alert ID: W9wONZ0BMz4H2gnOvxOF
+2026-03-28 11:28:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:28:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:28:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:29:26 | orchestrator | INFO | New alert ID: atwQNZ0BMz4H2gnOXBOc
+2026-03-28 11:29:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:29:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:29:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:29:26 | orchestrator | INFO | New alert ID: aNwQNZ0BMz4H2gnOIBPe
+2026-03-28 11:29:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:29:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:29:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:29:26 | orchestrator | INFO | New alert ID: ZtwPNZ0BMz4H2gnO5RNS
+2026-03-28 11:29:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:29:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:29:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:29:26 | orchestrator | INFO | New alert ID: YtwPNZ0BMz4H2gnOqRPK
+2026-03-28 11:29:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:29:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:29:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:30:26 | orchestrator | INFO | New alert ID: iNwRNZ0BMz4H2gnORhOv
+2026-03-28 11:30:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:30:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:30:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:30:26 | orchestrator | INFO | New alert ID: idwRNZ0BMz4H2gnORhOv
+2026-03-28 11:30:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:30:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:30:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:30:26 | orchestrator | INFO | New alert ID: fdwRNZ0BMz4H2gnORhOv
+2026-03-28 11:30:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:30:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:30:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:30:26 | orchestrator | INFO | New alert ID: cNwRNZ0BMz4H2gnOCxMc
+2026-03-28 11:30:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:30:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:30:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:30:26 | orchestrator | INFO | New alert ID: b9wQNZ0BMz4H2gnOzxNX
+2026-03-28 11:30:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:30:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:30:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:30:26 | orchestrator | INFO | New alert ID: a9wQNZ0BMz4H2gnOkxPZ
+2026-03-28 11:30:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:30:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:30:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:31:26 | orchestrator | INFO | New alert ID: 0NwSNZ0BMz4H2gnOMRO4
+2026-03-28 11:31:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:31:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:31:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:31:26 | orchestrator | INFO | New alert ID: ztwRNZ0BMz4H2gnO9hMQ
+2026-03-28 11:31:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:31:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:31:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:31:26 | orchestrator | INFO | New alert ID: y9wRNZ0BMz4H2gnOthOY
+2026-03-28 11:31:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:31:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:31:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:31:26 | orchestrator | INFO | New alert ID: ytwRNZ0BMz4H2gnOthOY
+2026-03-28 11:31:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:31:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:31:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:31:26 | orchestrator | INFO | New alert ID: wtwRNZ0BMz4H2gnOchPX
+2026-03-28 11:31:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:31:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:31:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:31:26 | orchestrator | INFO | New alert ID: v9wRNZ0BMz4H2gnOchPX
+2026-03-28 11:31:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:31:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:31:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:31:26 | orchestrator | INFO | New alert ID: wNwRNZ0BMz4H2gnOchPX
+2026-03-28 11:31:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:31:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:31:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:32:26 | orchestrator | INFO | New alert ID: 3NwTNZ0BMz4H2gnOHBMA
+2026-03-28 11:32:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:32:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:32:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:32:26 | orchestrator | INFO | New alert ID: 1twSNZ0BMz4H2gnO4BNM
+2026-03-28 11:32:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:32:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:32:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:32:26 | orchestrator | INFO | New alert ID: 1dwSNZ0BMz4H2gnOpBPM
+2026-03-28 11:32:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:32:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:32:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:32:26 | orchestrator | INFO | New alert ID: 0dwSNZ0BMz4H2gnOaRNH
+2026-03-28 11:32:26 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:32:26 | lsass_dump_response | WARNING | ALERT DETECTED | user= | host=WS01.lab.local
+2026-03-28 11:32:26 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'placeholder', 'technique': 'lsass_dump_response'}
+2026-03-28 11:55:22 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-03-28 11:55:22 | orchestrator | INFO | New alert ID: z9woNZ0BMz4H2gnOGhV6
+2026-03-28 11:55:22 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:55:22 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-03-28 11:55:22 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-03-28 11:55:32 | lsass_dump_response | INFO | Host WS01.lab.local isolated successfully
+2026-03-28 11:55:32 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'success', 'technique': 'T1003.001', 'action': 'host_isolated', 'host': 'WS01.lab.local'}
+2026-03-28 11:55:32 | orchestrator | INFO | New alert ID: ztwoNZ0BMz4H2gnOGhV6
+2026-03-28 11:55:32 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:55:32 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-03-28 11:55:32 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-03-28 11:55:42 | lsass_dump_response | INFO | Host WS01.lab.local isolated successfully
+2026-03-28 11:55:42 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'success', 'technique': 'T1003.001', 'action': 'host_isolated', 'host': 'WS01.lab.local'}
+2026-03-28 11:55:42 | orchestrator | INFO | New alert ID: zNwnNZ0BMz4H2gnO4xUJ
+2026-03-28 11:55:42 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:55:42 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-03-28 11:55:42 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-03-28 11:55:52 | lsass_dump_response | INFO | Host WS01.lab.local isolated successfully
+2026-03-28 11:55:52 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'success', 'technique': 'T1003.001', 'action': 'host_isolated', 'host': 'WS01.lab.local'}
+2026-03-28 11:55:52 | orchestrator | INFO | New alert ID: y9wnNZ0BMz4H2gnOpxVi
+2026-03-28 11:55:52 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:55:52 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-03-28 11:55:52 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-03-28 11:56:02 | lsass_dump_response | INFO | Host WS01.lab.local isolated successfully
+2026-03-28 11:56:02 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'success', 'technique': 'T1003.001', 'action': 'host_isolated', 'host': 'WS01.lab.local'}
+2026-03-28 11:56:02 | orchestrator | INFO | New alert ID: x9wnNZ0BMz4H2gnOZxXu
+2026-03-28 11:56:02 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:56:02 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-03-28 11:56:02 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-03-28 11:56:05 | lsass_dump_response | ERROR | Failed to isolate WS01.lab.local
+2026-03-28 11:56:05 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'error', 'technique': 'T1003.001', 'host': 'WS01.lab.local'}
+2026-03-28 11:56:05 | orchestrator | INFO | New alert ID: xNwnNZ0BMz4H2gnOMBV8
+2026-03-28 11:56:05 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:56:05 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-03-28 11:56:05 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-03-28 11:56:08 | lsass_dump_response | ERROR | Failed to isolate WS01.lab.local
+2026-03-28 11:56:08 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'error', 'technique': 'T1003.001', 'host': 'WS01.lab.local'}
+2026-03-28 11:56:08 | orchestrator | INFO | New alert ID: wtwmNZ0BMz4H2gnO-BXq
+2026-03-28 11:56:08 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:56:08 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-03-28 11:56:08 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-03-28 11:56:11 | lsass_dump_response | ERROR | Failed to isolate WS01.lab.local
+2026-03-28 11:56:11 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'error', 'technique': 'T1003.001', 'host': 'WS01.lab.local'}
+2026-03-28 11:56:11 | orchestrator | INFO | New alert ID: wdwmNZ0BMz4H2gnOvRWT
+2026-03-28 11:56:11 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 11:56:11 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-03-28 11:56:11 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-03-28 11:56:15 | lsass_dump_response | ERROR | Failed to isolate WS01.lab.local
+2026-03-28 11:56:15 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'error', 'technique': 'T1003.001', 'host': 'WS01.lab.local'}
+2026-03-28 12:00:57 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-03-28 12:00:57 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:00:57 | lsass_dump_response | WARNING | LSASS DUMP DETECTED | host=WS01.lab.local | user=
+2026-03-28 12:00:57 | lsass_dump_response | INFO | Isolating host: WS01.lab.local
+2026-03-28 12:01:07 | lsass_dump_response | INFO | Host WS01.lab.local isolated successfully
+2026-03-28 12:01:07 | orchestrator | INFO | Response complete | technique=T1003.001 | result={'status': 'success', 'technique': 'T1003.001', 'action': 'host_isolated', 'host': 'WS01.lab.local'}
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:01:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:01:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:02:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:02:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:02:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:02:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 12:02:07 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 12:02:07 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 16:07:21 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-03-28 16:07:21 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 16:07:21 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 16:07:21 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 16:07:21 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 16:07:21 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 16:07:21 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 16:07:21 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 16:07:21 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 16:07:21 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 16:07:21 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 16:07:21 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 16:07:21 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 16:07:21 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 16:07:21 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 16:07:21 | orchestrator | INFO | Processing alert | technique=T1562.001 | host=DC01.lab.local | user=
+2026-03-28 16:07:21 | orchestrator | INFO | DRY RUN - would execute T1562.001 response for 
+2026-03-28 16:07:21 | orchestrator | INFO | Processing alert | technique=T1562.001 | host=DC01.lab.local | user=
+2026-03-28 16:07:21 | orchestrator | INFO | DRY RUN - would execute T1562.001 response for 
+2026-03-28 18:24:40 | orchestrator | INFO | Starting orchestrator in polling mode...
+2026-03-28 18:24:40 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 18:24:40 | orchestrator | INFO | DRY RUN - would execute T1003.001 response for 
+2026-03-28 18:24:40 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 18:24:40 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 18:24:40 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 18:24:40 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 18:24:40 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 18:24:40 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 18:24:40 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 18:24:40 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 18:24:40 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 18:24:40 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 18:24:40 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 18:24:40 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 18:24:40 | orchestrator | INFO | Processing alert | technique=T1003.001 | host=WS01.lab.local | user=
+2026-03-28 18:24:40 | orchestrator | INFO | Host WS01.lab.local already responded to, skipping
+2026-03-28 18:24:40 | orchestrator | INFO | Processing alert | technique=T1562.001 | host=DC01.lab.local | user=
+2026-03-28 18:24:40 | orchestrator | INFO | DRY RUN - would execute T1562.001 response for 

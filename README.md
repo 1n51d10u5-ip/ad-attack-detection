@@ -47,20 +47,29 @@ This project implements a homelab-based Active Directory environment to simulate
 | Technique | ID | Detection Method | Event IDs |
 |---|---|---|---|
 | Kerberoasting | T1558.003 | RC4 TGS request | 4769 |
-| DCSync | T1003.006 | Replication rights abuse | 4662 |
+| DCSync | T1003.006 | Replication rights abuse (non-system context) | 4662 |
 | LSASS Dump | T1003.001 | Process access to lsass.exe | Sysmon 10 |
 | Brute Force | T1110 | Multiple failed logons | 4625 |
-| AD Enumeration | T1069 | LDAP reconnaissance | Sysmon 3 |
+| AD Enumeration | T1069 | - | Sysmon 3 |
 | Pass-the-Hash | T1550.002 | NTLM network logon | 4624 |
 | PSExec Lateral Movement | T1021.002 | Random service installation | 7045 |
 | Defense Evasion | T1562.001 | Defender service stopped | 7036 |
 | Log Clearing | T1070.001 | Event log cleared | 1102, 104 |
 | AS-REP Roasting | T1558.004 | Pre-auth disabled request | 4768 |
-| Pass-the-Ticket | T1550.003 | RC4 TGT request | 4768 |
+| Pass-the-Ticket | T1550.003 | - | 4769 |
 | Golden Ticket | T1558.001 | Forged TGT ticket options | 4769 |
 | GPO Abuse | T1484.001 | Group Policy modification | 5136 |
+| Silver Ticket | T1558.002 | — | 4769 | 
 
-## Automated Response Playbooks
+## Detection Limitations & Known Gaps
+
+| Technique | ID | Reason |
+|---|---|---|
+| Silver Ticket | T1558.002 | Forged service tickets are cryptographically valid; indistinguishable from legitimate tickets via Windows event logs alone |
+| Pass-the-Ticket | T1550.003 | Requires cross-event 4768/4769 correlation; limited by Kibana single-event KQL engine |
+| AD Enumeration | T1069 | Sysmon Event ID 3 captures outbound connections only; inbound LDAP from external hosts requires DS Access auditing or network sensor |
+
+## Automated Response Playbooks |
 
 | Playbook | Trigger | Actions |
 |---|---|---|
@@ -99,7 +108,7 @@ See [docs/setup-guide.md](docs/setup-guide.md) for full lab setup instructions.
 
 ## Results
 
-- **13 MITRE ATT&CK techniques** detected
+- **12 MITRE ATT&CK techniques** detected
 - **4 automated response playbooks** implemented
 - **Mean Time to Detect (MTTD):** < 5 minutes
 - **Mean Time to Respond (MTTR):** < 2 minutes

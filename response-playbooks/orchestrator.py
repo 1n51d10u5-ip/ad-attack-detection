@@ -3,6 +3,7 @@ import sys
 import os
 import time
 
+sys.stdout.reconfigure(line_buffering=True)
 sys.path.insert(0, os.path.dirname(__file__))
 
 from flask import Flask, request, jsonify
@@ -45,34 +46,71 @@ ISOLATION_TECHNIQUES = {"T1003.001", "T1021.002"}
 
 app = Flask(__name__)
 
-def process_alert(alert, responded_hosts=None):
+USER_COOLDOWN_TECHNIQUES = {"T1110", "T1550.002", "T1558.003", "T1558.004", "T1003.006"}
+
+def process_alert(alert, responded_hosts=None, responded_users=None):
     parsed = parse_alert(alert)
     technique_id = parsed.get("technique_id", "UNKNOWN")
     host = parsed.get("host", "")
+    user = parsed.get("username", "")
 
-    logger.info(f"Processing alert | technique={technique_id} | host={host} | user={parsed['username']}")
 
     if technique_id == "UNKNOWN":
         return {"status": "skipped", "reason": "unknown technique"}
+    
+    logger.info(f"Processing alert | technique={technique_id} | host={host} | user={user}")
 
     handler = TECHNIQUE_HANDLERS.get(technique_id)
     if not handler:
         return {"status": "skipped", "reason": "no handler"}
 
-    # Per-host cooldown for isolation-type responses
+    # Per-host cooldown for isolation techniques
     if responded_hosts is not None and technique_id in ISOLATION_TECHNIQUES:
         if host in responded_hosts:
-            logger.info(f"Host {host} already responded to, skipping")
+            logger.debug(f"Host {host} already responded to, skipping")
             return {"status": "skipped", "reason": "already_responded"}
         responded_hosts.add(host)
 
+    # Per-user cooldown for user-based techniques
+    if responded_users is not None and technique_id in USER_COOLDOWN_TECHNIQUES:
+        if user and user in responded_users:
+            logger.debug(f"User {user} already responded to, skipping")
+            return {"status": "skipped", "reason": "already_responded"}
+        if user:
+            responded_users.add(user)
+
     if config.DRY_RUN:
-        logger.info(f"DRY RUN - would execute {technique_id} response for {parsed['username']}")
+        logger.info(f"DRY RUN - would execute {technique_id} response for {user}")
         return {"status": "dry_run", "technique": technique_id}
 
     result = handler(parsed)
     logger.info(f"Response complete | technique={technique_id} | result={result}")
     return result
+
+
+def polling_mode():
+    logger.info("Starting orchestrator in polling mode...")
+    seen_ids = set()
+    responded_hosts = set()
+    responded_users = set()
+
+    while True:
+        try:
+            for technique_id in TECHNIQUE_HANDLERS.keys():
+                alerts = get_recent_alerts(technique_id=technique_id, minutes=1)
+                for alert in alerts:
+                    alert_id = alert.get("_id")
+                    if not alert_id:
+                        continue
+                    if alert_id in seen_ids:
+                        continue
+                    seen_ids.add(alert_id)
+                    process_alert(alert, responded_hosts, responded_users)
+        except Exception as e:
+            logger.error(f"Polling error: {e}")
+
+        time.sleep(config.POLL_INTERVAL)
+
 
 @app.route('/alert', methods=['POST'])
 def webhook_handler():
@@ -87,27 +125,6 @@ def webhook_handler():
 def health():
     return jsonify({"status": "ok"})
 
-def polling_mode():
-    logger.info("Starting orchestrator in polling mode...")
-    seen_ids = set()
-    responded_hosts = set()
-
-    while True:
-        try:
-            for technique_id in TECHNIQUE_HANDLERS.keys():
-                alerts = get_recent_alerts(technique_id=technique_id, minutes=2)
-                for alert in alerts:
-                    alert_id = alert.get("_id")
-                    if not alert_id:
-                        continue
-                    if alert_id in seen_ids:
-                        continue
-                    seen_ids.add(alert_id)
-                    process_alert(alert, responded_hosts)
-        except Exception as e:
-            logger.error(f"Polling error: {e}")
-
-        time.sleep(config.POLL_INTERVAL)
 
 if __name__ == "__main__":
     if "--webhook" in sys.argv:
